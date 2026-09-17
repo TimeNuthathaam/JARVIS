@@ -13,6 +13,7 @@ Updated: 2026-09-17
 - Memory Galaxy reads global vault Markdown, frontmatter aliases/tags, and wikilinks.
 - Search API calls the existing `sb-search.py` hybrid engine and falls back to lexical search.
 - Viewer detail panel shows aliases, tags, full memory content, and connected nodes.
+- Galaxy camera fixed: nodes auto-fit on load, labels remain visible, and hit areas work while zoomed.
 - Second Brain scripts now default to `~/.second-brain` and honor `SECOND_BRAIN_DIR`.
 - Cross-platform date handling fixed for macOS/BSD and Linux/GNU.
 
