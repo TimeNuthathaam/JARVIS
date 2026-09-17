@@ -1,0 +1,40 @@
+#!/bin/sh
+set -eu
+
+if [ "$#" -eq 0 ]; then
+    echo 'usage: codex-model MODEL [codex options]' >&2
+    exit 2
+fi
+
+selected=$1
+shift
+
+case "$selected" in
+    z.ai/*)
+        model=${selected#z.ai/}
+        if [ -z "$model" ]; then
+            echo 'missing Z.AI model name' >&2
+            exit 2
+        fi
+        model=$(printf '%s' "$model" | tr '[:upper:]' '[:lower:]')
+        key_file="$HOME/.config/codex-model/zai.key"
+        if [ ! -r "$key_file" ]; then
+            echo "missing Z.AI API key: $key_file" >&2
+            exit 2
+        fi
+        IFS= read -r ZAI_API_KEY < "$key_file" || true
+        if [ -z "$ZAI_API_KEY" ]; then
+            echo 'Z.AI API key is empty' >&2
+            exit 2
+        fi
+        export ZAI_API_KEY
+        exec codex \
+            -c 'model_provider="zai"' \
+            -c 'model_providers.zai.name="Z.AI"' \
+            -c 'model_providers.zai.base_url="https://api.z.ai/api/v1"' \
+            -c 'model_providers.zai.env_key="ZAI_API_KEY"' \
+            -c 'model_providers.zai.wire_api="responses"' \
+            -m "$model" "$@"
+        ;;
+    *) exec codex -m "$selected" "$@" ;;
+esac
