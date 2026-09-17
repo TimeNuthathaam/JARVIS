@@ -1,0 +1,26 @@
+# Graphify is a derived, text-only analysis layer for this vault.
+.git/
+.obsidian/
+graphify-out/
+output/
+audit/
+log/
+index.md
+
+# Owner policy: store media, but never OCR or analyze images through /sb or Graphify.
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.heic
+*.svg
+*.mp3
+*.m4a
+*.wav
+*.flac
+*.ogg
+*.mp4
+*.mov
+*.mkv
+*.webm

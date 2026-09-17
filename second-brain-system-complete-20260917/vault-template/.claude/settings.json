@@ -1,0 +1,34 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"/home/time/Downloads/website_new_system/.claude/skills/project-memory/hooks/pm-session-start.sh\""
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"/home/time/Downloads/website_new_system/.claude/skills/project-memory/hooks/pm-pre-compact.sh\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"/home/time/Downloads/website_new_system/.claude/skills/project-memory/hooks/pm-stop-capture.sh\""
+          }
+        ]
+      }
+    ]
+  }
+}

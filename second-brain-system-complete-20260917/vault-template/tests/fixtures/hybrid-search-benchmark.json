@@ -1,0 +1,82 @@
+[
+  {
+    "query": "สถาปัตยกรรมความจำระยะยาวของ agent",
+    "expected": ["concepts/agent-memory-architecture.md", "concepts/agent-persistence.md"]
+  },
+  {
+    "query": "ทำสมองที่สองแบบ LLM wiki",
+    "expected": "concepts/ai-second-brain-llm-wiki.md"
+  },
+  {
+    "query": "วงจร agent ทำ research ซ้ำและปรับคำถามเอง",
+    "expected": ["concepts/agentic-research-loop.md", "concepts/autoresearch-loop.md"]
+  },
+  {
+    "query": "ควบคุม browser โดยไม่ใช้ API",
+    "expected": "concepts/browser-automation-no-api.md"
+  },
+  {
+    "query": "ระบบช่วยจำคนรู้จัก นัดหมาย และ follow-up",
+    "expected": "concepts/personal-relationship-manager.md"
+  },
+  {
+    "query": "ใช้ Chrome DevTools เป็นเครื่องมือให้ AI เปิดเว็บ",
+    "expected": "entities/chrome-devtools-mcp.md"
+  },
+  {
+    "query": "run Claude Code 24/7 with cron",
+    "expected": "concepts/claude-code-247-headless-agent.md"
+  },
+  {
+    "query": "ให้ agent หลายตัวตรวจ QA กันเอง",
+    "expected": "concepts/multi-agent-qa-loop.md"
+  },
+  {
+    "query": "ป้องกัน context หลักจากข้อมูลของ sub-agent",
+    "expected": "concepts/sub-agent-context-protection.md"
+  },
+  {
+    "query": "ประเมิน fair value ก่อนวางเดิมพันหรือเทรด",
+    "expected": "concepts/fair-value-pricing.md"
+  },
+  {
+    "query": "แนวทางลงทุนในตลาดหุ้นไทย",
+    "expected": "concepts/thai-stock-investing.md"
+  },
+  {
+    "query": "advanced filler injection techniques",
+    "expected": "concepts/เทคนิคฉีดฟิลเลอร์ขั้นสูง.md"
+  },
+  {
+    "query": "สาร polynucleotide แบบฉีดเพื่อฟื้นฟูผิว",
+    "expected": "concepts/injectable-polynucleotides.md"
+  },
+  {
+    "query": "Gen Z ชอบแบรนด์จริงใจไม่ดูสมบูรณ์แบบ",
+    "expected": "concepts/gen-z-authentic-brand-relationship.md"
+  },
+  {
+    "query": "ไอเดียเปิดคาเฟ่มัทฉะ",
+    "expected": "concepts/matcha-cafe-ideas.md"
+  },
+  {
+    "query": "ข้อมูลสัญญาเช่าซื้อรถ Mercedes Benz",
+    "expected": "entities/mercedes-benz-leasing-h232689.md"
+  },
+  {
+    "query": "บันทึกการซื้อเวชภัณฑ์ของคลินิก",
+    "expected": "concepts/medical-supply-purchases.md"
+  },
+  {
+    "query": "ใช้ master prompt คุม orchestrator หลาย agent",
+    "expected": "concepts/master-prompt-and-orchestrator-pattern.md"
+  },
+  {
+    "query": "ขั้นตอน agentic engineering ตั้งแต่ plan ถึง validate",
+    "expected": "concepts/agentic-engineering-loop.md"
+  },
+  {
+    "query": "ลดค่า token ด้วยการเลือก model ตามความยากของงาน",
+    "expected": ["concepts/cost-arbitrage-token-spend.md", "concepts/model-switching-orchestrator-economics.md"]
+  }
+]

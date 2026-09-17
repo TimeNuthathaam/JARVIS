@@ -1,0 +1,7 @@
+# Obsidian keeps machine-local UI state here.
+.obsidian/
+
+# Local secrets and rebuildable hybrid-search state.
+.env
+.sb/
+__pycache__/

@@ -1,0 +1,40 @@
+{
+  "description": "Project-local Codex lifecycle hooks.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"/home/time/Downloads/website_new_system/.claude/skills/project-memory/hooks/pm-session-start.sh\"",
+            "timeout": 30
+          }
+        ],
+        "matcher": "startup|resume|clear|compact"
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"/home/time/Downloads/website_new_system/.claude/skills/project-memory/hooks/pm-pre-compact.sh\"",
+            "timeout": 30
+          }
+        ],
+        "matcher": "manual|auto"
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"/home/time/Downloads/website_new_system/.claude/skills/project-memory/hooks/pm-stop-capture.sh\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

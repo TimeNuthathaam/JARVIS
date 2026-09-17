@@ -1,0 +1,8 @@
+{
+  "snapshot_char_cap": 8000,
+  "capture_message_char_cap": 16000,
+  "embedding_provider": "ollama",
+  "embedding_model": "qwen3-embedding:0.6b",
+  "ollama_url": "http://127.0.0.1:11434",
+  "search_limit": 6
+}
